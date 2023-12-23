@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: montserrat;
+}
+
+body {
+  background-color: var(--primary);
+}
+:root {
+  --primary: #222222;
+  --second: #f8faad;
+}
+
+/* Navigation Bar */
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--primary);
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style-type: none;
+  width: 500px;
+  justify-content: space-around;
+  font-family: montserrat;
+  /* background-color: #f8faad; */
+}
+
+.nav-menu ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-menu ul a:hover {
+  background-color: var(--second);
+  color: var(--primary);
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: 0.3s ease all;
+}
+
+.nav-logo img {
+  width: 70%;
+  height: 70%;
+}
+
+/* Content */
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--primary);
+}
+
+.content-text {
+  text-align: center;
+}
+
+.content-text h1 {
+  font-family: montserrat;
+  font-size: 100px;
+  color: white;
+  font-weight: 600;
+}
+
+.content-text span {
+  font-size: 50px;
+}
+
+.content-text p {
+  font-size: 25px;
+  width: 550px;
+  color: white;
+  font-family: montserrat;
+  font-weight: 300;
+  /* background-color: #f8faad; */
+}
+
+.content-button {
+  /* background-color: #f8faad; */
+  margin-top: 30px;
+}
+
+.content-button a {
+  text-decoration: none;
+  background-color: var(--second);
+  padding: 8px 40px;
+  border-radius: 10px;
+  color: var(--primary);
+  font-family: montserrat;
+  font-weight: 600;
+}
+
+.content-button a:hover {
+  background-color: #feffca;
+  transition: 0.3s ease all;
+}
+
+.content-img img {
+  width: 406px;
+  height: 488px;
+  top: 150px;
+  left: 909px;
+  animation: hovering 3s infinite;
+}
+
+@keyframes hovering {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* About us */
+
+.abt-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: right;
+  background-color: var(--primary);
+  margin: 10px 10px 25px;
+}
+
+.abt-img img {
+  width: 422px;
+  height: 431px;
+}
+
+.abt-text h1 {
+  font-size: 64px;
+  font-family: montserrat;
+  font-weight: 720;
+}
+
+.abt-text {
+  /* background-color: aqua; */
+  width: 45%;
+  color: white;
+  font-size: 20px;
+  font-family: montserrat;
+  font-weight: 300;
+}
+
+.abt-head {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.abt-head .horizontal-line {
+  width: 320px;
+}
+
+/* Service */
+.card-head {
+  text-align: center;
+  color: white;
+  font-family: montserrat;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.card-head .horizontal-line {
+  width: 400px;
+}
+
+.card-container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 386px;
+  height: 322px;
+  background-color: var(--second);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  font-family: montserrat;
+}
+
+.card img {
+  padding-top: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+.card h3 {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 20px;
+  color: var(--primary);
+}
+.card p {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 16px;
+  color: var(--primary);
+}
+
+.read-details {
+  text-align: center;
+  margin-top: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* Contact-Us */
+
+.contact-container {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-content {
+  background-color: var(--second);
+  padding-top: 20px;
+  border-radius: 10px;
+}
+
+form {
+  width: 90%;
+  max-width: 500px;
+  /* background-color: #f8faad; */
+  align-items: center;
+}
+
+textarea {
+  resize: none;
+}
+
+.contact-content label {
+  font-weight: 550;
+}
+
+.contact-input {
+  margin-bottom: 10px;
+  /* background-color: aqua; */
+  padding-left: 23px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  outline: none;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.contact-input span {
+  font-size: 12px;
+}
+.error {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  margin-bottom: 10px;
+  /* background-color: aqua; */
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--primary);
+  color: var(--second);
+  width: 130px;
+}
+
+button h2 {
+  font-weight: 500;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-head {
+  text-align: center;
+  color: white;
+  font-family: montserrat;
+  font-size: 30px;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-container img {
+  width: 407px;
+  height: 385px;
+  top: 2466px;
+  left: 866px;
+}
+
+.horizontal-line {
+  width: 342px;
+  height: 5px;
+  background-color: var(--second);
+  border: none;
+}
+
+/* Footer */
+
+.footer {
+  padding-top: 100px;
+  color: white;
+}
+
+.footer .horizontal-line {
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 40px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.footer-logo h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.footer-logo span {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.logo img {
+  width: 80%;
+  height: 80%;
+}
+
+.sosmed {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.sosmed-img {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+  margin-bottom: 20px;
+}
+
+.sosmed-img img {
+  width: 30px;
+  height: 30px;
+}
